@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before ::after {
+    box-sizing: inherit;
+}
+
+.body {
+    max-width: 1000px;
+    width: 100%;
+    margin: 50px auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.bodyTheme {
+    background-color: rgb(255, 236, 66);
+}
+
+.header__title {
+    margin: 10px auto;
+}
+
+.main {
+    overflow-x: auto;
+}

@@ -1,0 +1,39 @@
+.navigation__field {
+    border-radius: 15px;
+}
+
+.navigation__themeButton {
+    background-color: rgb(255, 236, 66);
+    border-radius: 10px;
+}
+
+.navigation__themeButton:hover {
+    border: 2px dashed;
+}
+
+.navigation__themeButtonColor {
+    background-color: white;
+}
+
+.navigation__list {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.navigation__spanElement {
+    width: 120px;
+    display: inline-block;
+}
+
+.navigation__radioElement {
+    height: 15px;
+    width: 15px;
+}
+
+.navigation__star {
+    font-size: 12px;
+}
+
+.navigation__date {
+    float: right;
+}

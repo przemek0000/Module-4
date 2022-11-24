@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <script defer src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+
+    <head>
+        <h1 class="header__title">
+            Currency Exchange
+        </h1>
+    </head>
+    <main class="main">
+        <section class="navigation">
+            <form class="js-navigation__form">
+                <fieldset class="navigation__field">
+                    <legend>
+                        Converter
+                        <button type="button" class="navigation__themeButton js-navigation__themeButton">Change
+                            theme</button>
+                    </legend>
+                    <ul class="navigation__list">
+                        <li>
+                            <label>
+                                <span class="navigation__spanElement">Currency </span>
+                                <input class="navigation__radioElement js-navigation__radioElement" type="radio"
+                                    name="selectCurrency" value="Currency">
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <span class="navigation__spanElement">Cryptocurrency </span>
+                                <input class="navigation__radioElement" type="radio" name="selectCurrency">
+                            </label>
+                        </li>
+                    </ul>
+                    <span class="navigation__star">*required</span>
+                    <span class="navigation__date">Date: 23/11/2022</span>
+                </fieldset>
+            </form>
+        </section>
+        <section class="currency">
+            <form>
+                <fieldset class="currency__field js-currency__field">
+                    <legend>
+                        Currency
+                    </legend>
+                    <label>
+                        *Base
+                        <select class="js-currency__baseCurrency" name="currency__baseCurrency">
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="PLN">PLN</option>
+                            <option value="USD">USD</option>
+                        </select>
+                        <input class="currency__input js-currency__input" name="currency" type="number" min="0.01"
+                            step="0.01">
+                    </label>
+                    <label>
+                        Quote
+                        <select class="js-currency__quoteCurrency" name="quoteCurrency">
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="PLN">PLN</option>
+                            <option value="USD">USD</option>
+                        </select>
+                        <input class="currency__input js-currency__output" name="resultCurrency" type="number"
+                            min="0.01" disabled>
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+        <section class="cryptoCurrency">
+            <form>
+                <fieldset class="cryptoCurrency__field js-cryptoCurrencyField">
+                    <legend>
+                        Cryptocurrency
+                    </legend>
+                    <label>
+                        *Base
+                        <select class="js-cryptoCurrency__baseCryptocurrency" name="cryptoCurrency__baseCryptocurrency">
+                            <option>BTC</option>
+                            <option>ETH</option>
+                            <option>USDC</option>
+                        </select>
+                        <input class="cryptoCurrency__input js-cryptoCurrency__input" name="cryptoCurrency"
+                            type="number" min="0.01" step="0.01">
+                    </label>
+                    <label>
+                        Quote
+                        <select class="js-cryptoCurrency__quoteCryptocurrency" name="quoteCryptocurrency">
+                            <option>BTC</option>
+                            <option>ETH</option>
+                            <option>USDC</option>
+                        </select>
+                        <input class="cryptoCurrency__input js-cryptoCurrency__output" name="resultCryptourrency"
+                            type="number" min="0.01" disabled>
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>
+            All rights reserved
+        </p>
+    </footer>
+</body>
+
+</html>
